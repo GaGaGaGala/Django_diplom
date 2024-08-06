@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f9;
+        }
+        .about {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+        }
+        .about h1 {
+            font-size: 2em;
+            color: #2c3e50;
+        }
+        .about p {
+            margin: 10px 0;
+        }
+        .about strong {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Библиотека</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/books/">Главная</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'about' %}">О нас <span class="sr-only">(текущая)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contacts' %}">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="about">
+            <h1>О нас</h1>
+            <p><strong>Добро пожаловать в нашу библиотеку!</strong></p>
+            <p>Мы рады приветствовать вас на нашем сайте, где вы можете найти информацию о самых интересных и захватывающих книгах. Наша цель - предоставить вам доступ к качественной литературе и помочь найти книги, которые будут соответствовать вашим интересам и предпочтениям.</p>
+            <p>Наша коллекция постоянно обновляется, и мы стараемся включать в нее самые актуальные и востребованные издания. Мы также предлагаем вам возможность оставить свои отзывы и рекомендации, чтобы другие пользователи могли воспользоваться вашим опытом.</p>
+            <p>Если у вас есть вопросы или предложения, пожалуйста, не стесняйтесь связаться с нами через раздел "Контакты". Спасибо, что выбрали нас!</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
