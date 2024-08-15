@@ -20,6 +20,7 @@ class Migration(migrations.Migration):
                 ('publication_year', models.IntegerField(verbose_name='Год публикации')),
                 ('description', models.TextField(verbose_name='Описание')),
                 ('cover_image', models.URLField(verbose_name='Фотография')),
+                ('reading',  models.TextField(max_length=100, default=None, verbose_name="читать")),
             ],
         ),
     ]

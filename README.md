@@ -1,8 +1,6 @@
 python -m pip install -r requirements.txt
 
 ```
-[Flask] python app.py
-[FastAPI] python -m uvicorn app.main:app
 [Django] python manage.py runserver
 ```
 
@@ -22,7 +20,6 @@ django_book/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
-│   ├── serializers.py
 │   ├── migrations/
 │   │   └── __init__.py
 │   ├── templates/
