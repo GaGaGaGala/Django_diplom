@@ -7,7 +7,7 @@ def index(request):
 
 def book_detail(request, id):
     book = get_object_or_404(Book, id=id)
-    return render(request, 'books/book_detail.html', {'books': book})
+    return render(request, 'books/book_detail.html', {'book': book})
 
 def about(request):
     return render(request, 'books/about.html')
