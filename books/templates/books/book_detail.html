@@ -38,6 +38,7 @@
         <p><strong>Год публикации:</strong> {{ book.publication_year }}</p>
         <a href="{% url 'index' %}" class="btn btn-primary">Назад</a>
         <a href="{{ book.reading }}" class="btn btn-primary"target="_blank">читать</a>
+        <a href="{% url 'contacts' %}" class="btn btn-primary">Оставить отзыв</a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
